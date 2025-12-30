@@ -1,0 +1,42 @@
+---
+import ExperienciaItem from '../components/ExperienciaItem.astro'
+import ContenedorSeccion from './Contenedor_seccion.astro'
+const EXPERIENCIA = [
+    {
+        date: "February 2022",
+        description:"Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+        link: "#",
+        title: "Application UI code in Tailwind CSS"
+
+    },
+
+      {
+        date: "February 2022",
+        description:"Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+        link: "#",
+        title: "Application UI code in Tailwind CSS"
+
+    }
+
+]
+---
+
+<ol class="relative border-s border-violet-500">
+  {EXPERIENCIA.map((experiencia) => (
+    <li class="relative mb-10">
+      <span
+        class="absolute -start-[7px]
+               h-4 w-4 rounded-full
+               bg-violet-800"
+      ></span>
+
+      <div class="ms-8">
+        <ExperienciaItem {...experiencia} />
+      </div>
+    </li>
+  ))}
+</ol>
+
+                  
+
+
