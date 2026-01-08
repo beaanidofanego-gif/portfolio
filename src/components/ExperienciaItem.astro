@@ -2,24 +2,13 @@
 interface Props {
     date: string
     description: string
-    link: string
     title: string
     
 }
-const  {title, link, date} = Astro.props
+const  {title, date, description} = Astro.props
 ---
 
-        <time class="text-xs md:text-sm font-extrabold text-violet-400">Enero 2022 {date}</time>
-        <h3 class="text-base md:text-lg font-semibold text-heading text-violet-800 my-2">Especialista SEO {title}</h3>
-        <p class="mb-4 text-xs md:text-sm text-gray-800">He participado en proyectos web realizando tareas de análisis y 
-            optimización SEO, trabajando con datos y métricas para entender 
-            el rendimiento y la evolución de cada proyecto. 
-            He llevado a cabo optimizaciones técnicas orientadas 
-            a mejorar el rendimiento y la experiencia de usuario, 
-            así como auditorías SEO técnicas y de contenidos. 
-            También he elaborado informes de seguimiento de 
-            resultados y KPIs, incorporando automatización de 
-            tareas y análisis mediante scripts y APIs, y colaborando 
-            con otros perfiles técnicos y digitales en el desarrollo 
-            y mejora de los proyectos.</p>
+        <time class="text-xs md:text-sm font-extrabold text-violet-400">{date}</time>
+        <h3 class="text-base md:text-lg font-semibold text-heading text-violet-800 my-2">{title}</h3>
+        <p class="mb-4 text-xs md:text-sm text-gray-800">{description}</p>
      
