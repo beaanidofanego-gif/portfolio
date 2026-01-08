@@ -7,9 +7,7 @@ import IconoMail from '../components/iconos/icono_mail.astro'
 import Experiencia from 'src/components/Experiencia.astro';
 import Contenedor_seccion from '../components/Contenedor_seccion.astro'
 import ProyectoItem from 'src/components/ProyectoItem.astro';
-import Footer from 'src/components/Footer.astro';
 
-const columnas =[ ProyectoItem]
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -22,14 +20,14 @@ const columnas =[ ProyectoItem]
 	>
 	
 	<main>
-		<Contenedor_seccion class="relative py-20 pb-20"> 
+		<Contenedor_seccion class="relative py-10 md:py-20 pb-10 md:pb-20"> 
 			<img
 				src="Bea-2.png"
-				class="rounded-full w-20 h-30 mb-8"
+				class="rounded-full w-20 h-30 md:w-20 md:h-30 mb-6 md:mb-8"
 				alt="photo-Bea"
 				
 			/>
-				<h1 class="text-black text-5xl font-bold flex flex-row gap-x-4 pb-10" >Hola! Soy Bea<a 
+				<h1 class="text-black text-3xl md:text-5xl font-bold flex flex-col md:flex-row gap-x-4 gap-y-4 pb-6 md:pb-10" >Hola! Soy Bea<a 
 					href="CV_BEA_ANIDO.pdf"
 					target="_blank"
 					rel="noopener"
@@ -40,12 +38,12 @@ const columnas =[ ProyectoItem]
 				</h1>
 			
 			
-			<h3 class="leading-relaxed text-xl opacity-80 text-gray-800 pb-3 text-wrap"> y actualmente estudio <span class="text-violet-800 font-extrabold">Desarrollo de Aplicaciones Multiplataforma (DAM)</span>.
+			<h3 class="leading-relaxed text-base md:text-xl opacity-80 text-gray-800 pb-3 text-wrap"> y actualmente estudio <span class="text-violet-800 font-extrabold">Desarrollo de Aplicaciones Multiplataforma (DAM)</span>.
 Compagino mis estudios con mi trabajo como <span class="text-violet-800 font-extrabold">SEO</span>, esta experiencia me ha dado una visión muy práctica de cómo la estructura, el código y la optimización influyen en el rendimiento de una web.
 Ahora estoy enfocada en <span class="text-violet-800 font-extrabold">desarrollar una base sólida en programación y desarrollo de aplicaciones</span>, con la idea de combinar mi experiencia previa en SEO con un perfil técnico más completo.
 			 </h3>
 
-			<nav class="flex gap-x-4 mt-8 pb-20">
+			<nav class="flex flex-col md:flex-row gap-x-4 gap-y-3 mt-6 md:mt-8 pb-10 md:pb-20">
 					<Redes_Sociales href="https://www.linkedin.com/in/beatrizanido">
 							<IconoLinkedin class="w-6 h-6" />
 					</Redes_Sociales>
